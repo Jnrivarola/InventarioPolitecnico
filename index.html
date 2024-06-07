@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTROL DE STOCK CENTRO POLITECNICO MALVINAS ARGENTINAS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>CONTROL DE STOCK CENTRO POLITECNICO MALVINAS ARGENTINAS</h1>
+    </header>
+    <nav>
+        <div class="nav1">
+            <ul>
+                <div id="home">
+                    <li><img id="imagenHome" src="img/home.png" alt="home"><a href="index.html">Inicio</a></li>
+                </div>
+                <div id="IngresoProducto">
+                    <li><img id="imageningresoproducto" src="img/IngresoProducto.png" alt="IngresoProducto"><a
+                            href="IngresoProductos.html">Ingreso de productos</a></li>
+                </div>
+                <div id="RetiroProducto">
+                    <li><img id="imagenretiroproducto" src="img/RetiroProducto.png" alt="RetiroProducto"><a
+                            href="RetirarProductos.html">Retirar productos</a></li>
+                </div>
+                <div id="RegistroMovimientos">
+                    <li><img id="imagenregistromovimientos" src="img/RegistroMovimientos.png"
+                            alt="RegistroMovimientos"><a href="RegistroMovimientos.html">Registro de movimientos</a>
+                    </li>
+                </div>
+                <div id="Productos">
+                    <li><img id="imagenproductos" src="img/Productos.png" alt="Productos"><a
+                            href="Productos.html">Productos</a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="usuario-info">
+            <button id="cerrar-sesion">Cerrar Sesión</button>
+        </div>
+    </nav>
+
+    <article>
+        <div class="logo-poli">
+            <img src="img/Logoinicio.png" alt="Logoinicio">
+        </div>
+    </article>
+    
+        <footer class="franja-abajo">
+            <div class="copy">
+                <p>
+                    © 2023 Politecnico
+                </p>
+            </div>
+        </footer>
+    
+    <script>
+        document.getElementById("cerrar-sesion").addEventListener("click", function() {
+           
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+
+
+</html>

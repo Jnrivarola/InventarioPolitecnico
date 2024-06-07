@@ -1,0 +1,265 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../img/Fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+   
+    body {
+        background-image: url('../img/Fondo.jpg');
+    }
+}
+
+header {
+    background-color: black;
+    height: 3.75em;
+}
+
+h1 {
+    color: rgb(223, 217, 210);
+    font-size: 1.5625rem;
+    padding-top: 0.625rem;
+    padding-left: 5px;
+}
+
+a {
+    color: aquamarine;
+    text-decoration: none;
+    font-size: 0.8125rem;
+}
+
+nav {
+    background-color: rgb(51, 102, 153);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(51, 102, 153);
+    padding-left: 5px;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.nav1 {
+    float: left;
+    padding: 5px;
+}
+
+.nav1 a:hover {
+    color: rgb(45, 45, 54);
+    transition: 0.5s;
+}
+
+.nav1 a {
+    margin-right: 20px;
+}
+
+nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.usuario-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    padding-top: 5px;
+}
+
+#cerrar-sesion {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: aquamarine;
+    padding-top: 5px;
+    font-size: 17px;
+}
+
+#cerrar-sesion:hover {
+    color: rgb(45, 45, 54);
+    transition: 0.5s;
+}
+
+
+.logo-poli img {
+    width: 100%; 
+    max-width: 400px;
+    height: auto; 
+    padding: 20px 60px; 
+}
+
+
+.franja-abajo {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:60px;
+    background-color:black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.copy {
+    color: rgb(223, 217, 210);
+    font-size: 0.8125rem;
+    text-align: center;
+    margin: 10px;
+    position: absolute;
+
+}
+
+
+#imagenHome,
+#imageningresoproducto,
+#imagenretiroproducto,
+#imagenregistromovimientos,
+#imagenproductos {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+#home li,
+#IngresoProducto li,
+#RetiroProducto li,
+#RegistroMovimientos li,
+#Productos li {
+    display: flex;
+    align-items: center;
+}
+
+
+.titulo-ingr-prod h1 {
+    padding-top: 20px;
+    font-size: 30px;
+    color: rgb(51, 102, 153);
+}
+.formulario {
+    width: 30%; 
+    margin: 0 auto; 
+  }
+  
+  
+  .formulario label, .formulario input, .formulario textarea, .formulario select {
+    display: block; 
+    margin-bottom: 5px; 
+    width: 100%; 
+    height: 40px;
+  }
+
+  .formulario select{
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .formulario textarea{
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .formulario input[type="text"]{
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .formulario input[type="number"]{
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  
+  .formulario input[type="submit"] {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+  }
+  
+  .formulario input[type="submit"]:hover {
+    background-color: #0056b3; 
+  }
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-container h1 {
+    font-size: 24px;
+    color: rgb(51, 102, 153);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    font-size: 16px;
+    color: rgb(51, 102, 153);
+    margin-bottom: 10px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid rgb(51, 102, 153);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.login-container button[type="submit"] {
+    background-color: rgb(51, 102, 153);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button[type="submit"]:hover {
+    background-color: rgb(31, 72, 112);
+}
